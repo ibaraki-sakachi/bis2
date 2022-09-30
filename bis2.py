@@ -23,7 +23,6 @@ class MainWindow(QWidget):
         super().__init__()
         self.timer = QTimer(self)
         self.setWindowTitle('BUSanBIS')
-        self.setWindowIcon(QIcon('kana.ico'))
         self.setGeometry(100, 100, 640, 480)
         self.label1 = QLabel('정류장명을 입력해 주세요:', self)
         self.label1.setAlignment(Qt.AlignCenter)
@@ -175,7 +174,6 @@ class SelDialog(QWidget):
         super(SelDialog, self).__init__()
         global bstop, selstop
         self.setWindowTitle('정류장 선택')
-        self.setWindowIcon(QIcon('kana.ico'))
         self.setGeometry(120, 120, 640, 10)
         self.key='Cp3kRtnkoRgEPXMSK65TjzIV+BoUmqc/0ARtjUjeovb8Qd5kxqn76oCModae8nTAnYAHBfLcXE9iwyWBFyk7UQ=='
         self.url0 = 'http://apis.data.go.kr/6260000/BusanBIMS/busStopList'
